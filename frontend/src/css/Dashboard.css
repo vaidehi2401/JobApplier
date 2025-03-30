@@ -1,0 +1,33 @@
+.dashboard-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    height: calc(100vh - 60px); /* adjust according to your header height */
+  }
+  
+  
+ 
+ 
+  
+  .dashboard-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .chart-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .chart-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  

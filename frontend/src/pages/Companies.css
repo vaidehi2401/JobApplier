@@ -1,0 +1,184 @@
+.companies-page {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar (you'll add the component later) */
+
+/* Main form section */
+.forms-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  flex-shrink: 0;
+  width: 600px;
+  flex-wrap: wrap;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+}
+
+/* Individual form sections */
+/* Updated form-section */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  flex: 1 1 250px; /* Grow/Shrink but base size 250px */
+  max-width: calc(50% - 10px); /* Two in a row max */
+  box-sizing: border-box;
+}
+
+/* Make form elements fully responsive inside */
+.form-section input,
+.form-section select,
+.form-section textarea,
+.form-section button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* Scrollable company/job list */
+/* Company list container */
+.companies-list {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ccc;
+}
+
+/* Company card */
+.company-card {
+  background-color: #ffffff;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.company-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.company-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.company-header span {
+  color: #555;
+  font-size: 14px;
+}
+
+.company-header p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #777;
+}
+
+.company-header {
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+/* Job listings grid */
+.job-listing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Job card */
+.job-listing {
+  background-color: #fefefe;
+  flex: 1 1 calc(50% - 10px); /* Two in a row */
+  padding: 15px;
+  border-left: 4px solid #3498db;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-listing:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Status tag */
+.status-tag {
+  font-weight: bold;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .job-listing {
+    flex: 1 1 100%; /* Stack on small screens */
+  }
+}
+
+
+.status-tag {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.status-saved { color: gray; }
+.status-applied { color: blue; }
+.status-interviewed { color: orange; }
+.status-offered { color: green; }
+.status-rejected { color: red; }
+
+input, select, textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.3);
+}
+
+button {
+  padding: 10px 14px;
+  background-color:  #2563eb;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea,
+.form-section button {
+  width: 100%;
+}

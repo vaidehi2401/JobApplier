@@ -1,0 +1,37 @@
+.profile-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    color: #1e293b;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #3b82f6; /* Primary Blue */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.2s;
+  }
+  
+  .icon:hover {
+    color: #e0f2fe; /* Light Blue Hover */
+  }
+  .logout-section {
+    margin-top: auto;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
